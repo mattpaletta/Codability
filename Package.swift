@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "Codability",
+    platforms: [
+        .macOS(.v10_14), .iOS(.v9), .tvOS(.v13)
+    ],
     products: [
         .library(name: "Codability", targets: ["Codability"]),
     ],
